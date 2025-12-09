@@ -3,7 +3,7 @@ name = "machine-language-models"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.13"
 dependencies = [
     "jupyter>=1.1.1",
     "matplotlib>=3.10.7",
@@ -11,4 +11,9 @@ dependencies = [
     "pandas>=2.3.3",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
+]
+
+[tool.uv.workspace]
+members = [
+    "HRM_model",
 ]
